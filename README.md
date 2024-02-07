@@ -3,6 +3,21 @@ knsolver is a tool for exploring/analyzing the Kerr-Newman metric near Planck sc
 
 It runs in the [Julia Language](https://julialang.org/) interpreter and renders plots with [gnuplot](http://www.gnuplot.info/)
 
+## Usage
+- Edit knsolver.jl to set/change configuration parameters
+- Start Julia interpreter
+- Change to working directory
+
+  `julia> cd("~/knsolver/src")`
+- Load knsolver
+
+  `julia> include("knsolver.jl")`
+- run
+
+  `julia> main()`
+
+- If you want to make parameter changes, edit knsolver.jl again, and repeat the include and main() steps.
+
 ## Background
 The inspiration for this tool was to explore *neutral metric* solutions to General Relativity (where dτ/dt=1), but it can be used to plot solutions to any target time ratio, including zero. That non-trivial, finite, real, neutral metric solutions exist may be surprising even to physicists, who are used to focusing on effects occuring near the zero metric. Indeed, in the trivial case with M != 0, Q = 0, J = 0, and zero test particle velocity there are no finite solutions for dτ/dt=1. However, if M and any one of Q, J, or test particle velocity is non-zero, one or more solutions of finite radius exist.
 
