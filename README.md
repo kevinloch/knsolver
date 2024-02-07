@@ -39,7 +39,7 @@ Super-luminal velocities are not required but are accepted by knsolver. This can
 
 ## Sample Plots
 -----
-Neutral metric with charge, angular momentum, radial and equitorial test particle velocity
+Neutral metric with electric charge, angular momentum, radial and equitorial test particle velocity
 
 Parameters:
 - dτ/dt = 1
@@ -51,7 +51,20 @@ Parameters:
 - dφ^2/c^2dt^2 = 1
 ![kn-tr1-q2qp-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q2qp-jp05-th90-v1v0v1.png)
 -----
-Neutral metric without charge, angular momentum and only radial test particle velocity
+Same as above but with no electric charge
+
+Parameters:
+- dτ/dt = 1
+- Q^2 = 0
+- J = ℏ/2
+- θ = π/2
+- dr^2/c^2dt^2 = 1
+- dθ^2/c^2dt^2 = 0
+- dφ^2/c^2dt^2 = 1
+![kn-tr1-q0-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q0-jp05-th90-v1v0v1.png)
+-----
+
+Neutral metric with radial test particle velocity, but no electric charge or angular momentum
 
 Parameters:
 - dτ/dt = 1
