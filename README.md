@@ -75,7 +75,7 @@ Parameters:
 - dr^2/c^2dt^2 = 1
 - dθ^2/c^2dt^2 = 0
 - dφ^2/c^2dt^2 = 0
-![kn-tr1-q2qp-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q0-j0-th90-v1v0v0.png)
+![kn-tr1-q2qp-j0-th90-v1v0v1.png](sample_plots/kn-tr1-q0-j0-th90-v1v0v0.png)
 -----
 Same as above but also with equitorial velocity. In this very interesting result the red line *exactly* covers a second blue line!
 
@@ -87,7 +87,7 @@ Parameters:
 - dr^2/c^2dt^2 = 1
 - dθ^2/c^2dt^2 = 0
 - dφ^2/c^2dt^2 = 1
-![kn-tr1-q2qp-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q0-j0-th90-v1v0v0.png)
+![kn-tr1-q2qp-j0-th90-v1v0v1.png](sample_plots/kn-tr1-q0-j0-th90-v1v0v1.png)
 -----
 Zero metric, minimal "Schwarzschild" solution with no charge, angular momentum or test particle velocity. Unsurprisingly, this is just a plot of r_s vs M
 
