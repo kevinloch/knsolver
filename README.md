@@ -51,7 +51,7 @@ Parameters:
 - dφ^2/c^2dt^2 = 1
 ![kn-tr1-q2qp-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q2qp-jp05-th90-v1v0v1.png)
 -----
-Same as above but with no electric charge
+Same as above but with no electric charge. The two blue lines converge close enough that knsolver cannot detect either on the left side of the plot with the default settings. Increasing the inner loop M_increment and r_increment settings in knsolver.jl will improve this at the expense of runtime.
 
 Parameters:
 - dτ/dt = 1
