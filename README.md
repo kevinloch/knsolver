@@ -75,7 +75,8 @@ Parameters:
 - dφ^2/c^2dt^2 = 0
 ![kn-tr0-q0-j0-th90-v0v0v0.png](sample_plots/kn-tr0-q0-j0-th90-v0v0v0.png)
 -----
-Neutral metric with charge, angular momentum, radial and "equitorial" test particle velocity and non-equitorial theta = 60 degrees. This is a maximal complexity solution. If expressed as a polynomial in r it would have 10 roots, as a polynomial in M: 9 roots!
+Neutral metric with charge, angular momentum, radial and "equitorial" test particle velocity and non-equitorial theta = 60 degrees. This is a maximal complexity solution. If expressed as a polynomial in r it would have 10 roots, as a polynomial in M it would have 9 roots!
+
 Parameters:
 - dτ/dt = 0
 - Q^2 = (2qp)^2
