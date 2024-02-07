@@ -20,7 +20,7 @@ It runs in the [Julia Language](https://julialang.org/) interpreter and renders 
 - If you want to make parameter changes, edit knsolver.jl again, and repeat the include and main() steps.
 
 ## Background
-The inspiration for this tool was to explore *neutral metric* solutions to General Relativity (where dτ^2 / dt^2 = 1), but it can be used to plot solutions to any target time ratio, including zero. That non-trivial, finite, real, neutral metric solutions exist may be surprising even to physicists, who are used to focusing on effects occuring near the zero metric. Indeed, in the trivial case with M ≠ 0, Q = 0, J = 0, and zero test particle velocity there are no finite r solutions for dτ^2 / dt^2 = 1. However, if M and any one of Q, J, or test particle velocity is non-zero, one or more solutions of finite radius exist.
+The inspiration for this tool was to explore *neutral metric* solutions to General Relativity (where dτ^2 / dt^2 = 1, i.e. *no* time dialation), but it can be used to plot solutions to any target time ratio, including zero. That non-trivial, finite, real, neutral metric solutions exist may be surprising even to physicists, who are used to focusing on effects occuring near the zero metric. Indeed, in the trivial case with M ≠ 0, Q = 0, J = 0, and zero test particle velocity there are no finite r solutions for dτ^2 / dt^2 = 1. However, if M and any one of Q, J, or test particle velocity is non-zero, one or more solutions of finite radius exist.
 
 ## Negative Mass?
 General relativity is time-symmetric. The KN metric for example is specified in terms of time squared, so that *identical* positive (foward time) and negative (reverse time) solutions exist for any given set of parameters. It is *not* however symmetric in +/- Mass. This due to having mass terms (r_s and a) that contain M that are not quadratic. If we disregard negative mass (energy) as being unphysical we are still left with positive mass operating in reverse time, which behaves *exactly* like negative mass (both gravitational and inertial) would in forward time. By combining these two features (symmetric time behavior and asymmetric mass behavior) we can accept negative values for M, understanding that it just represents positive mass operating in reverse time.
@@ -53,7 +53,7 @@ Parameters:
 - dφ^2 / c^2dt^2 = 1
 ![kn-tr1-q2qp-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q2qp-jp05-th90-v1v0v1.png)
 -----
-Same as above but with no electric charge. The two blue lines converge close enough that knsolver cannot detect either on the left side of the plot with the default settings. Increasing the inner loop M_increment and r_increment settings in knsolver.jl will improve this at the expense of runtime.
+Same as above but with no electric charge. The two blue lines converge close enough that knsolver cannot detect either on the left side of the plot with the default settings. Increasing the inner loop M_increment and r_increment settings in knsolver.jl will improve this at the expense of run time.
 
 Parameters:
 - dτ^2 / dt^2 = 1
