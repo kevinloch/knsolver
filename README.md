@@ -16,6 +16,7 @@ It runs in the [Julia Language](https://julialang.org/) interpreter and renders 
 
   `julia> main()`
 
+- knsolver will output a CSV file 'tmp.csv' and attempt to run gnuplot to generate 'tmp.pdf'. On Mac OSX it will also attempt to load 'tmp.pdf' in the Preview app. You can edit this behavior in knsolver.jl to suit your workflow.
 - If you want to make parameter changes, edit knsolver.jl again, and repeat the include and main() steps.
 
 ## Background
