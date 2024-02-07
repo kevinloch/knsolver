@@ -37,7 +37,7 @@ As can be shown by knsolver plots, very nonlinear and interesting things happen 
 There is nothing in this model that requires antiparticles to have negative mass, or to propogate in negative time. In fact antiparticles are known to propogate in forward time, and are known to have positive mass. The preference for forward time in macroscopic (>> Planck scale) behavior could be an intrinsic result of the non-linear solutions regardless of the chosen parameters.
 
 ## Super-luminal velocities
-Super-luminal velocities are not required but are accepted by knsolver. This can occur on any one of the test particle velocity dimensions, or by the combination of the three. Surprisingly, these are well behaved. If this bothers you then I suggest keeping the total velocy <= c.
+Super-luminal velocities are not required but are accepted by knsolver. This can occur on any one of the test particle velocity dimensions, or by the combination of the three. Surprisingly, these are well behaved. If this bothers you then I suggest keeping the total velocy <= c. It is assumed that any super-luminal behavior would be limited to tiny subcomponents of SM particles (let's call them "tachyons") operating near Planck scale and that the group velocity of SM particles would be limited to c as observed macroscopically.
 
 ## Sample Plots
 -----
