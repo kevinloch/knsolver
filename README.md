@@ -78,7 +78,7 @@ Parameters:
 Neutral metric with charge, angular momentum, radial and "equitorial" test particle velocity and non-equitorial theta = 60 degrees. This is a maximal complexity solution. If expressed as a polynomial in r it would have 10 roots, as a polynomial in M it would have 9 roots!
 
 Parameters:
-- dτ/dt = 0
+- dτ/dt = 1
 - Q^2 = (2qp)^2
 - J = ℏ/2
 - θ = π/3
