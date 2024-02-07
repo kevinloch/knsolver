@@ -1,5 +1,5 @@
 # knsolver
-knsolver is a tool for exploring the [Kerr-Newman](https://en.wikipedia.org/wiki/Kerr%E2%80%93Newman_metric) near Planck scale
+knsolver is a tool for exploring the [Kerr-Newman](https://en.wikipedia.org/wiki/Kerr%E2%80%93Newman_metric) metric near Planck scale
 
 It runs in the [Julia Language](https://julialang.org/) interpreter and renders plots with [gnuplot](http://www.gnuplot.info/)
 
