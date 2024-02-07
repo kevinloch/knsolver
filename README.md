@@ -31,13 +31,13 @@ One interesting consequence is that while some solutions to the neutral metric g
 
 (or the value of the Higgs field couplings in physicist speak)
 
-As can be shown by knsolver plots, very nonlinear and interesting things happen right around Planck scale. If a pair of positive (foward time) and "negative" (reverse time) Planck scale masses were able to coexist in a stable resonance (with some near-field gravitational "partitioning" and resonance perhaps enforced by time neutrality) and the positive mass was slightly larger than the negative mass, there would be a tiny residual positive mass in the far field. Some version of this model might explain the [Hierarchy problem](https://en.wikipedia.org/wiki/Hierarchy_problem), (why SM particle masses so tiny compared to the Planck mass).
+As can be shown by knsolver plots, very nonlinear and interesting things happen right around Planck scale. If a pair of positive (foward time) and "negative" (reverse time) Planck scale masses were able to coexist in a stable resonance (with some near-field gravitational "partitioning" and resonance perhaps enforced by time neutrality) and the positive mass was slightly larger than the negative mass, there would be a tiny residual positive mass in the far field. Some version of this model might explain the [Hierarchy problem](https://en.wikipedia.org/wiki/Hierarchy_problem), (why SM particle masses are so tiny compared to the Planck mass).
 
 ### What about antiparticles?
 There is nothing in this model that requires antiparticles to have negative mass, or to propogate in negative time. In fact antiparticles are known to propogate in forward time, and are known to have positive mass. The preference for forward time in macroscopic (>> Planck scale) behavior could be an intrinsic result of the non-linear solutions and resonances regardless of the chosen parameters.
 
 ## Super-luminal velocities
-Super-luminal velocities are not required but are accepted by knsolver. This can occur on any one of the test particle velocity dimensions, or by the combination of the three. Surprisingly, these are well behaved. If this bothers you then I suggest keeping the total velocy <= c.
+Super-luminal velocities are not required but are accepted by knsolver. This can occur on any one of the test particle velocity dimensions, or by the combination of the three. Surprisingly, these are well behaved.
 
 It is assumed that any super-luminal behavior would be limited to internal movement of tiny subcomponents of SM particles (let's call them "tachyons") operating near Planck scale and that the group velocity of SM particles would be limited to c as observed macroscopically. It also may not be appropriate to think of these values as "velocities" in the smooth integrated manner we are familiar with. Any movement near Planck scale is likely to be very "jumpy" in quantum gravity and it may be more appropriate to think of them as timing parameters than as traditional velocities. Perhaps tachyons move at exactly c in each degree of freedom a particular resononance mode supports.
 
