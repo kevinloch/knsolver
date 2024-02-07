@@ -28,7 +28,9 @@ General relativity is time-symmetric. The KN metric for example is specified in 
 One interesting consequence is that while some solutions to the neutral metric give negative values for r (which we also consider unphysical), inverting the sign of M also inverts the sign of r, turning a negative radius into a positive radius.
 
 ## This may lead to an understanding of how Standard Model (SM) particles gain mass
+
 (or the value of the Higgs field couplings in physicist speak)
+
 As can be shown by knsolver plots, very nonlinear and interesting things happen right around Planck scale. If a pair of positive and negative Planck scale masses were able to coexist in a stable resonance (with some gravitational "partitioning" and perhaps enforced by time neutrality) and the positive mass was slightly larger than the negative mass, there would be a tiny residual positive mass in the far field. Some version of this model might explain the [Hierarchy problem](https://en.wikipedia.org/wiki/Hierarchy_problem), (why SM particle masses so tiny compared to the Planck mass).
 
 ### What about antiparticles?
