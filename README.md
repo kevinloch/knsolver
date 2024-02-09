@@ -37,7 +37,7 @@ As can be shown by knsolver plots, very nonlinear and interesting things happen 
 There is nothing in this model that requires antiparticles to have negative mass, or to propogate in negative time. In fact antiparticles are known to propogate in forward time, and are known to have positive mass. The preference for forward time in macroscopic (>> Planck scale) behavior could be an intrinsic result of the non-linear solutions and resonances regardless of the chosen parameters.
 
 ## Electromagnetic self-energy
-When Q ≠ 0, care must be taken to observe the electromagnetic self-energy mass equivalent to total mass ratio. Knsolver will always output this ratio to the tmp.csv but display on plots is optional. By default knsolver.jl uses 'plotkn-noratios.cfg'. You can edit that file to use 'plotkn.cfg' instead and it will draw EM self energy and angular momentum ratios with the RH axis. An M_em ratio > 1 is not necessarily invalid if the charge is part of another resonant mode that is partitioned gravitationally but not electromagnetically.
+When Q ≠ 0, care must be taken to observe the electromagnetic self-energy mass equivalent to total mass ratio. Knsolver will always output this ratio to the tmp.csv but display on plots is optional. By default knsolver.jl uses 'plotkn-noratios.cfg'. You can edit that file to use 'plotkn.cfg' instead and it will draw EM self energy and angular momentum ratios with the RH axis. M_em > 1 would be considered 'extremal' and is likely invalid.
 
 ## Super-luminal velocities
 Super-luminal velocities are not required but are accepted by knsolver. This can occur on any one of the test particle velocity dimensions, or by the combination of the three. Surprisingly, these are well behaved.
