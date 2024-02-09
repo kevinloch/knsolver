@@ -33,7 +33,7 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-version=1.0
+version=1.0.1
 using Printf
 setprecision(128)
 
@@ -240,7 +240,7 @@ function main()
 # Configuration Options
 #
   # target time ratio
-  #global target_time_ratio=-bf1 # negative neutral metric (???)
+  #global target_time_ratio=-bf1 # not physical (sqrt would be imaginary)
   global target_time_ratio=bf1 # neutral metric
   #global target_time_ratio=bf0 # spaghetti
 
