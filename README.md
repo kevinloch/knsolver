@@ -36,7 +36,7 @@ As can be shown by knsolver plots, very nonlinear and interesting things happen 
 ### What about antiparticles?
 There is nothing in this model that requires antiparticles to have negative mass, or to propogate in negative time. In fact antiparticles are known to propogate in forward time, and are known to have positive mass. The preference for forward time in macroscopic (>> Planck scale) behavior could be an intrinsic result of the non-linear solutions and resonances regardless of the chosen parameters.
 
-## Electromagnetic self-energy and angular momentum ratios
+## Electromagnetic self-energy and "effective" angular momentum ratios
 When Q ≠ 0, care must be taken to observe the electromagnetic self-energy mass equivalent to total mass ratio as M_em / M_total > 1 would be considered 'extremal' and is likely invalid.
 
 Likewise when J ≠ 0, the ratio of effective angular momentum J_eff (calculated from the derived mass, radius, and velocity factors for each plot point) vs ℏ/2 should be considered. Note: J_eff can and will differ from the 'J' angular momentum input parameter (Kerr-Newman variable).
