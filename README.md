@@ -51,7 +51,7 @@ It is assumed that any superluminal behavior would be limited to internal moveme
 Also, when modeling rest mass in it's inertial frame group velocity would be zero. It is assumed that tachyon momenta would be distributed uniformally in n-spheres and oscillate radially, rotate (in the case of a 1-sphere), or both resulting in no macroscopic movement.
 
 ## Warning!
-The author is *not* a professional physicist. It's possible and even likely that I have made some major blunder(s) here. Be sure to run any results by a real physicist before publishing or using them for anything important. Knsolver intentionally allows inputs and outputs that might not by physical so that users can explore the full literal mathematical effects of the Kerr-Newman metric with minimal guardrails.
+The author is *not* a professional physicist. It's possible and even likely that I have made some major blunder(s) here. Be sure to run any results by a real physicist before publishing or using them for anything important. **Knsolver intentionally allows inputs and outputs that might not be physical** so that users can explore the full literal mathematical effects of the Kerr-Newman metric with minimal guardrails.
 
 ## Sample Plots
 -----
