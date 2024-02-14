@@ -86,7 +86,7 @@ ref_golden=(bf1 + sqrt(bf5)) / bf2
 #
 # shortcuts derived exclusively from reference values
 #
-dt=-ref_tP
+dt=ref_tP
 c_dt=ref_c * dt
 dt2=dt * dt
 c2_dt2=ref_c2 * dt2
