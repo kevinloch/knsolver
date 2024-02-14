@@ -33,7 +33,7 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-version=1.0.1
+version="1.0.2"
 using Printf
 setprecision(128)
 
@@ -86,7 +86,7 @@ ref_golden=(bf1 + sqrt(bf5)) / bf2
 #
 # shortcuts derived exclusively from reference values
 #
-dt=ref_tP
+dt=-ref_tP
 c_dt=ref_c * dt
 dt2=dt * dt
 c2_dt2=ref_c2 * dt2
