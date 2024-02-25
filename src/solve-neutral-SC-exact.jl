@@ -34,6 +34,10 @@
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 function solveNeutralSCExact(output_buf, Q, J, theta, v2roc2, v2thetaoc2, v2phioc2, scan_var, scan_mode, target_time_ratio)
+#
+# This function uses the time-neutral external Schwarzschild polynomials from https://vixra.org/abs/2402.0117
+#
+
   # These are zero for Schwarzschild metric
   global Qse_ratio=bf0
   global J_ratio=bf0
