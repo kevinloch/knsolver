@@ -144,6 +144,13 @@ function main()
   global use_exact_solution=0
   #global use_exact_solution=1
 
+  # path to gnuplot configuration
+  #global plot_command=`gnuplot -c ./plotkn.cfg`
+  global plot_command=`gnuplot -c ./plotkn-noratios.cfg`
+
+  # path to .PDF display program
+  global display_command=`open -a Preview ./tmp.pdf`
+
 ################################################
 
 #
@@ -196,12 +203,10 @@ function main()
 # generate plot, and display
 #
   # create plot
-  #global command=`gnuplot -c ./plotkn.cfg`
-  global command=`gnuplot -c ./plotkn-noratios.cfg`
-  run(command)
+  run(plot_command)
 
   # display with Preview app`
-  global command=`open -a Preview ./tmp.pdf`
-  run(command)
+  global display_command=`open -a Preview ./tmp.pdf`
+  run(display_command)
 
 end # function main()
