@@ -67,7 +67,7 @@ Parameters:
 - dφ^2 / c^2dt^2 = 1
 ![kn-tr1-q2qp-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q2qp-jp05-th90-v1v0v1.png)
 -----
-Same as above but with no electric charge. The blue line tapers off to the left as knsolver is unable to resolve that root with the default scan precision. Increasing the inner loop M_increment and r_increment settings in knsolver.jl will improve this at the expense of run time.
+Same as above but with no electric charge. The blue line tapers off to the left as knsolver is unable to resolve that root due to an invisible discontinuity using the default scan precision. Increasing the inner loop M_increment and r_increment settings in knsolver.jl will improve this at the expense of run time.
 
 Parameters:
 - dτ^2 / dt^2 = 1
