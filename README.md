@@ -20,12 +20,12 @@ It runs in the [Julia Language](https://julialang.org/) interpreter and renders 
 - If you want to make parameter changes, edit knsolver.jl again, and repeat the include and main() steps.
 
 ## Background
-The inspiration for this tool was to explore *neutral metric* solutions to General Relativity (where dτ^2 / dt^2 = 1, i.e. *no* time dialation), but it can be used to plot solutions to any target time ratio, including zero. That non-trivial, finite, real, neutral metric solutions exist may be surprising even to physicists, who are used to focusing on effects occuring near the zero metric. Indeed, in the trivial case with M ≠ 0, Q = 0, J = 0, and zero test particle velocity there are no finite r solutions for dτ^2 / dt^2 = 1. However, if M and any one of Q, J, or test particle velocity is non-zero, one or more solutions of finite radius exist.
+The inspiration for this tool was to explore time-neutral solutions to General Relativity (where dτ^2 / dt^2 = 1, i.e. *no* time dialation), but it can be used to plot solutions to any target time ratio, including zero (maximal time dialation). That finite, real, time-neutral metric solutions exist with r ≠ 0, and M ≠ 0, may be surprising. It is especially counter-intuitive for the Schwarzschild metric which does not have the opposite sign r_Q or a^2 terms of the higher order metrics. However, these solutions do exist mathematically.
 
 ## Negative Mass?
 General relativity is time-symmetric. The KN metric for example is specified in terms of time squared, so that *identical* foward time and reverse time solutions exist for any given set of parameters. It is *not* however symmetric in +/- Mass. This due to having mass terms (r_s and a) that contain M that are not quadratic. If we disregard negative mass (energy) as being unphysical we are still left with positive mass operating in reverse time, which behaves *exactly* like negative mass (both gravitational and inertial) would in forward time. By combining these two features (symmetric time behavior and asymmetric mass behavior) we can accept negative values for M, understanding that it just represents positive mass operating in reverse time.
 
-One interesting consequence is that while some solutions to the neutral metric give negative values for r (which we also consider unphysical), inverting the sign of M also inverts the sign of r, turning a negative radius into a positive radius.
+One interesting consequence is that while some solutions to the time-neutral metric give negative values for r (which we also consider unphysical), inverting the sign of M also inverts the sign of r, turning a negative radius into a positive radius.
 
 ## This may lead to an understanding of how Standard Model (SM) particles gain mass
 
@@ -55,7 +55,7 @@ The author is *not* a professional physicist. It's possible and even likely that
 
 ## Sample Plots
 -----
-Neutral metric with electric charge, angular momentum, radial and equitorial test particle velocity
+Time-Neutral metric with electric charge, angular momentum, radial and equitorial test particle velocity
 
 Parameters:
 - dτ^2 / dt^2 = 1
@@ -67,7 +67,7 @@ Parameters:
 - dφ^2 / c^2dt^2 = 1
 ![kn-tr1-q2qp-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q2qp-jp05-th90-v1v0v1.png)
 -----
-Same as above but with no electric charge. The two blue lines converge close enough that knsolver cannot detect either on the left side of the plot with the default settings. Increasing the inner loop M_increment and r_increment settings in knsolver.jl will improve this at the expense of run time.
+Same as above but with no electric charge. The blue line tapers off to the left as knsolver is unable to resolve that root with the default scan precision. Increasing the inner loop M_increment and r_increment settings in knsolver.jl will improve this at the expense of run time.
 
 Parameters:
 - dτ^2 / dt^2 = 1
@@ -79,7 +79,7 @@ Parameters:
 - dφ^2 / c^2dt^2 = 1
 ![kn-tr1-q0-jp05-th90-v1v0v1.png](sample_plots/kn-tr1-q0-jp05-th90-v1v0v1.png)
 -----
-Neutral metric with radial test particle velocity, but no electric charge or angular momentum
+Time-neutral metric with radial test particle velocity, but no electric charge or angular momentum
 
 Parameters:
 - dτ^2 / dt^2 = 1
@@ -91,7 +91,7 @@ Parameters:
 - dφ^2 / c^2dt^2 = 0
 ![kn-tr1-q2qp-j0-th90-v1v0v1.png](sample_plots/kn-tr1-q0-j0-th90-v1v0v0.png)
 -----
-Same as above but also with equitorial velocity. In this very interesting result the red line *exactly* covers a second blue line. With dispersion in r associated with the uncertainty principle, you would get a tiny positive net mass!
+Same as above but also with equitorial velocity. In this very interesting result the red line *exactly* covers a blue line. With dispersion in r associated with the uncertainty principle, you would get a tiny positive net mass!
 
 Parameters:
 - dτ^2 / dt^2 = 1
@@ -103,7 +103,7 @@ Parameters:
 - dφ^2 / c^2dt^2 = 1
 ![kn-tr1-q2qp-j0-th90-v1v0v1.png](sample_plots/kn-tr1-q0-j0-th90-v1v0v1.png)
 -----
-Zero metric, minimal "Schwarzschild" solution with no charge, angular momentum or test particle velocity. Unsurprisingly, this is just a plot of r_s vs M
+Zero-time metric, minimal "Schwarzschild" solution with no charge, angular momentum or test particle velocity. Unsurprisingly, this is just a plot of r_s vs M
 
 Parameters:
 - dτ^2 / dt^2 = 0
@@ -115,7 +115,7 @@ Parameters:
 - dφ^2 / c^2dt^2 = 0
 ![kn-tr0-q0-j0-th90-v0v0v0.png](sample_plots/kn-tr0-q0-j0-th90-v0v0v0.png)
 -----
-Neutral metric with charge, angular momentum, radial and "equitorial" test particle velocity and non-equitorial theta = 60 degrees. This is a maximal complexity solution. If expressed as a polynomial in r it would have 10 roots, as a polynomial in M it would have 9 roots!
+Time-neutral metric with charge, angular momentum, radial and "equitorial" test particle velocity and non-equitorial theta = 60 degrees. This is a maximal complexity solution. If expressed as a polynomial it would have 8 roots in both r and M!
 
 Parameters:
 - dτ^2 / dt^2 = 1
