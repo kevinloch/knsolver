@@ -33,9 +33,9 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-version="1.0.3"
+version="1.1"
 using Printf
-setprecision(128)
+setprecision(1024) # extra high precision is required when using polynomial exact solutions
 
 #
 # frequently used integers encoded as BigFloat
@@ -96,6 +96,7 @@ inv_c2_dt2=bf1 / c2_dt2
 # include solution engines
 #
 include("solve-KN-coarse.jl")
+include("solve-neutral-SC-exact.jl")
 
 function main()
 
@@ -141,8 +142,8 @@ function main()
   global M_end=BigFloat("1.0E-5")
 
   # use exact solution if available
-  global use_exact_solution=0
-  #global use_exact_solution=1
+  #global use_exact_solution=0
+  global use_exact_solution=1
 
   # path to gnuplot configuration
   #global plot_command=`gnuplot -c ./plotkn.cfg`
@@ -172,7 +173,13 @@ function main()
   @printf("Begin M(r)\n")
   while scan_var < r_end
     @printf("r: %+.3e\n", scan_var)
-    solveKNCoarse(output_buf, Q, J, theta, v2roc2, v2thetaoc2, v2phioc2, scan_var, scan_mode, target_time_ratio)
+    if  (use_exact_solution == 1) && (Q == bf0) && (J == bf0) && (v2roc2 != bf0) && (target_time_ratio == bf1)
+      # use exact time-neutral Schwarzschild solution (you only need to use exact solutions in one scan mode)
+      solveNeutralSCExact(output_buf, Q, J, theta, v2roc2, v2thetaoc2, v2phioc2, scan_var, scan_mode, target_time_ratio)
+    else
+      setprecision(128) # downgrade to quad precision for metric in standard form
+      solveKNCoarse(output_buf, Q, J, theta, v2roc2, v2thetaoc2, v2phioc2, scan_var, scan_mode, target_time_ratio)
+    end
     global scan_var *= r_multiplier;
   end # while
   @printf("End   M(r)\n")
@@ -181,7 +188,7 @@ function main()
 
 #
 # Solve r(M)
-#
+
   global M_increment=BigFloat("1.0E-2") # this precision determines how many sample points per magnitude on the plot
   global M_multiplier=bf1 + M_increment
   global scan_mode=1 # r(M)
@@ -189,7 +196,13 @@ function main()
   @printf("Begin r(M)\n")
   while scan_var < M_end
     @printf("M: %+.3e\n", scan_var)
-    solveKNCoarse(output_buf, Q, J, theta, v2roc2, v2thetaoc2, v2phioc2, scan_var, scan_mode, target_time_ratio)
+    if  (use_exact_solution == 1) && (Q == bf0) && (J == bf0) && (v2roc2 != bf0) && (target_time_ratio == bf1)
+      # use exact time-neutral Schwarzschild solution (you only need to use exact solutions in one scan mode)
+      #solveNeutralSCExact(output_buf, Q, J, theta, v2roc2, v2thetaoc2, v2phioc2, scan_var, scan_mode, target_time_ratio)
+    else
+      setprecision(128) # downgrade to quad precision for metric in standard form
+      solveKNCoarse(output_buf, Q, J, theta, v2roc2, v2thetaoc2, v2phioc2, scan_var, scan_mode, target_time_ratio)
+    end
     global scan_var *= M_multiplier;
   end # while
   @printf("End   r(M)\n")
