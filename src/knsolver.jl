@@ -33,7 +33,7 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-version="1.1"
+version="1.1.1"
 using Printf
 setprecision(1024) # extra high precision is required when using polynomial exact solutions
 

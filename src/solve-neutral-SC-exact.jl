@@ -63,8 +63,8 @@ function solveNeutralSCExact(output_buf, Q, J, theta, v2roc2, v2thetaoc2, v2phio
 #@printf("A: %+.3e, B: %+.3e, C: %+.3e, B2: %+.3e, discriminant: %+.3e\n", A, B, C, B2, discriminant)
 
     # check if A (and then B) is zero
-    if abs(A < BigFloat("1.0E-300")) # threshold must be appropriate for the value of setPrecision()
-      if abs(B < BigFloat("1.0E-300")) # threshold must be appropriate for the value of setPrecision()
+    if abs(A) < BigFloat("1.0E-300") # threshold must be appropriate for the value of setPrecision()
+      if abs(B) < BigFloat("1.0E-300") # threshold must be appropriate for the value of setPrecision()
         @printf("Warning, A=B=0, skipping\n")
       else
         @printf("Warning, A=0, using quadratic part of cubic equation\n")
