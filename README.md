@@ -91,7 +91,7 @@ Parameters:
 - dφ^2 / c^2dt^2 = 0
 ![kn-tr1-q2qp-j0-th90-v1v0v1.png](sample_plots/kn-tr1-q0-j0-th90-v1v0v0.png)
 -----
-Same as above but also with equitorial velocity. In this very interesting result the red line *exactly* covers a blue line. With dispersion in r associated with the uncertainty principle, you would get a tiny positive net mass!
+Same as above but also with equitorial velocity. In this very interesting result the red line *exactly* covers a blue line.
 
 Parameters:
 - dτ^2 / dt^2 = 1
